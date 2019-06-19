@@ -1,0 +1,95 @@
+\documentclass{beamer}
+\hypersetup{colorlinks=true, linkcolor=white, urlcolor=red}
+\usetheme{Copenhagen}
+\title{Presentation Title}
+\subtitle{Subtitle}
+\author{u/androgynyjoe}
+\institute{Reddit}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Information}
+\subsection{Instructions}
+
+\begin{frame}
+\frametitle{Instructions}
+
+If you're on a chromebook and you've never used a slideshow made by Beamer before then here's what you do.
+\begin{enumerate}
+\item Open this pdf document in Chrome (you've probably already done that).
+\item Make sure that the document is set to ``fit to width.''  For me, if you mouse over to the bottom right-hand corner there are three buttons and I click the top one.  (Depending on your aspect ratio it might not fit the width but exactly one frame should be on the screen at a time.)
+\item Put chrome in fullscreen mode.  On my keyboard that is the fourth button from the left on the top row (to the right of the refresh key).
+\item Use the left and right arrow keys to navigate through the frames.
+\end{enumerate}
+\end{frame}
+
+\subsection{About \LaTeX\ and Beamer}
+
+\begin{frame}
+\frametitle{What is this sorcery?}
+If, for whatever reason, you're interested in learning how to make presentations like this, the tool is called \href{https://www.overleaf.com/learn/latex/Beamer}{Beamer}.  It is one of the many things that can be typeset and formatted using a software package called \href{https://www.latex-project.org/about/}{\LaTeX}.  It is used in many technical professions (especially those that frequently need to typeset mathematics) to create beautiful, professional documents.
+
+\bigskip
+
+However, there is a bit of a learning curve and it's not for everyone.  If you don't have a specific reason that you want to learn \LaTeX\ and/or Beamer then you probably shouldn't bother.  Whatever you're using now is perfectly fine.  :-)
+\end{frame}
+
+\begin{frame}
+Why mathematics specifically?  Things like the following equations can be fairly difficult to do in traditional word processors but they are trivially easy in \LaTeX\ (once you know how).
+\bigskip
+\[ \langle \alpha , \beta \rangle = \frac{1}{\vert G \vert} \sum_{g \in G} \alpha(g) \overline{\beta(g)} \]
+\bigskip
+{\scriptsize
+\begin{equation*}
+\begin{split}
+&\iint_\Sigma \Bigg( \left( \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} \right) \mathrm{d}y\,\mathrm{d}z + \left( \frac{\partial P}{\partial z} + \frac{\partial R}{\partial x} \right) \mathrm{d}z\,\mathrm{d}x + \left( \frac{\partial Q}{\partial x} + \frac{\partial P}{\partial y} \right) \mathrm{d}x\,\mathrm{d}y   \Bigg) \\
+&\hspace{22em} = \oint_{\partial\Sigma} (P\,\mathrm{d}x + Q\,\mathrm{d}y + R\,\mathrm{d}z)
+\end{split}
+\end{equation*}
+}
+\bigskip
+\[ f(x) = \lim_{N\to\infty}\sum_{n=0}^N \frac{(x-a)^n}{n!} \left[\frac{\mathrm{d}f}{\mathrm{d}x}\right\vert_{x=a} \]
+%\[ \mathrm{dim}_k \mathrm{Ext}_R^i (M,k) \geq \mathrm{dim}_k \mathrm{Ext}_R^i (k,k) = \binom{n}{k}  \]
+\end{frame}
+
+\section{Random Nonsense}
+\subsection{Name of a section}
+
+\begin{frame}
+I'm just going to add some more random frames to fill out a full presentation.
+\end{frame}
+
+\begin{frame}
+This frame is my favorite frame.  I don't know why.
+\end{frame}
+
+\subsection{Another Section}
+
+\begin{frame}
+\begin{block}{This must be important}
+It's got a box around it and everything.
+\end{block}
+\pause
+\begin{itemize}
+\item Look at the bullet points.\pause
+\item Look at those simple, non-existent frame transitions.\pause
+\item ooooooooh\pause
+\item aaaaaaaah
+\end{itemize}
+\end{frame}
+
+\subsection{The End}
+
+\begin{frame}
+Now it's over.  How sad.
+
+\bigskip
+
+Thank you for coming to my TED talk.  I worked really hard on it.
+\end{frame}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
